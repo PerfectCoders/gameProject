@@ -1,0 +1,10 @@
+.nav{
+    display: flex;
+    background-color: lightcoral;
+    &_element{
+        margin: 1rem 1.5rem;
+        list-style: none;
+        font-size: 2rem;        
+    }
+}
+
