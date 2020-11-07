@@ -1,3 +1,9 @@
+.heading-3 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,8 +18,9 @@ html {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-columns: ([col-start] minmax(min-content, 1fr) [col-end])[8];
+      grid-template-columns: repeat(8, [col-start] minmax(-webkit-min-content, 1fr) [col-end]);
+      grid-template-columns: repeat(8, [col-start] minmax(min-content, 1fr) [col-end]);
   background-image: -webkit-gradient(linear, left top, right bottom, from(lightgreen), to(yellow));
   background-image: linear-gradient(to bottom right, lightgreen, yellow);
   background-size: cover;
@@ -22,15 +29,49 @@ html {
   font-family: 'Itim', sans-serif;
 }
 
-.menu_bar > ul {
+.menu_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: lightcoral;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+}
+
+header {
+  grid-column: col-start 2/ col-end 6;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.menu_bar > ul > li {
+.nav_element {
   margin: 1rem 1.5rem;
+  color: #ffffff;
   list-style: none;
   font-size: 2rem;
+}
+
+.toggle-icon {
+  background-color: lightcoral;
+  border-radius: 100%;
+  font-size: 5rem;
+  padding: 1rem;
+  color: #ffffff;
+  -webkit-box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=index.css.map */

@@ -10,7 +10,7 @@ html{
 
 .container{
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat( 8 , [col-start] minmax(min-content, 1fr) [col-end]);
     background-image: linear-gradient(to bottom right, lightgreen,yellow);
     background-size: cover;
     background-position: center;

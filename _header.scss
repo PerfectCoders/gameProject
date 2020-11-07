@@ -1,10 +1,40 @@
+.menu_bar{
+    display: flex;
+    background-color: $color-1;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+}
+
+header{
+    grid-column: col-start 2/ col-end 6;
+}
+
+nav{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-between;
+}
 .nav{
     display: flex;
-    background-color: lightcoral;
     &_element{
         margin: 1rem 1.5rem;
+        color: #ffffff;
         list-style: none;
         font-size: 2rem;        
+    }
+}
+
+
+// toggle
+
+.toggle{
+    &-icon{
+        background-color: $color-1;
+        border-radius: 100%;
+        font-size: 5rem;
+        padding: 1rem;
+        color: #ffffff;
+        box-shadow: 0 1rem 1.5rem rgba(0,0,0,0.5);
     }
 }
 
