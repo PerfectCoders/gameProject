@@ -11,11 +11,12 @@ html{
 .container{
     display: grid;
     grid-template-columns: repeat( 8 , [col-start] minmax(min-content, 1fr) [col-end]);
-    background-image: linear-gradient(to bottom right, lightgreen,yellow);
+    background-image: url('/images/background.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
     font-family: 'Itim', sans-serif;
+
 }
 
 

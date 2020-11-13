@@ -1,40 +1,69 @@
-.menu_bar{
-    display: flex;
-    background-color: $color-1;
-    padding: 1rem 3rem;
-    border-radius: 5px;
-}
+
 
 header{
     grid-column: col-start 2/ col-end 6;
 }
 
-nav{
-    display: flex;
-    margin-top: 5rem;
-    justify-content: space-between;
-}
-.nav{
-    display: flex;
-    &_element{
-        margin: 1rem 1.5rem;
-        color: #ffffff;
-        list-style: none;
-        font-size: 2rem;        
-    }
-}
 
 
 // toggle
 
 .toggle{
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
     &-icon{
         background-color: $color-1;
         border-radius: 100%;
-        font-size: 5rem;
+        font-size: 4rem;
         padding: 1rem;
         color: #ffffff;
         box-shadow: 0 1rem 1.5rem rgba(0,0,0,0.5);
     }
 }
+
+.close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    background-color: rgb(192, 9, 9);
+    color: #ffffff;
+    border-radius: 5px;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    cursor: pointer;
+}
+
+.navi{
+    width: 0;
+    text-align: center;
+    margin-top: 3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 5rem;
+    overflow: hidden;
+    transition: all 0.3s;
+    background: #ffffff;
+}
+
+.nav-item{
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid #000000;
+}
+
+.nav-item:hover{
+    background-color: teal;
+}
+
+
+
+
 
